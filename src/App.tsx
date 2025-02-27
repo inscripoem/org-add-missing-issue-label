@@ -183,12 +183,23 @@ function App() {
 							onChange={(e) => setToken(e.target.value)}
 						/>
 
+						<Typography variant="body2" color="text.secondary">
+							注：需要是具有组织所有仓库写权限的
+							<a href="https://github.com/settings/tokens" target="_blank" rel="noreferrer">
+								Classic Token
+							</a>
+						</Typography>
+
 						<TextField
 							fullWidth
 							label="组织名称"
 							value={orgName}
 							onChange={(e) => setOrgName(e.target.value)}
 						/>
+
+						<Typography variant="body2" color="text.secondary">
+							Name 而不是 Display Name
+						</Typography>
 					</Stack>
 				</Paper>
 
